@@ -1,15 +1,15 @@
 pipeline {
-         agent {
-                label 'pipeline_demo'
-               }
-         stages {
-                 stage('Build') {
+    agent {
+        label 'pipeline_demo'
+    }
+    stages {
+        stage('Build') {
                                 steps {
                                     echo 'building your app!'
                                 }
                  }
                  stage('Test') {
-                                steps {
+                    steps {
                                     echo 'testing your app!'
                                 }
                  }
